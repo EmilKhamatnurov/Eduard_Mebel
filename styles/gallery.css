@@ -1,0 +1,203 @@
+.gallery-section {}
+
+/* Галерея */
+.gallery {
+	position: relative;
+	width: 100%;
+	height: 717px;
+}
+
+.gallery-section__title-wrapper {
+	position: absolute;
+	top: 60px;
+	z-index: 100;
+}
+
+.section__title.gallery-section__title {
+	color: #fff;
+	font-size: 22px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+/* Слайды */
+.gallery__slides {
+	position: relative;
+}
+
+.gallery__slide {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 717px;
+}
+
+.gallery__slide_active {
+	opacity: 1;
+}
+
+/* Изображения слайдов */
+.gallery__slide_first {
+	background: url("../resources/Slide_project_1.png") center center / cover no-repeat;
+}
+
+.gallery__slide_second {
+	background: url("../resources/Slide_project_2.png") center center / cover no-repeat;
+}
+
+.gallery__slide_third {
+	background: url("../resources/Slide_project_3.png") center center / cover no-repeat;
+}
+
+.gallery__slide_fourth {
+	background: url("../resources/Slide_project_4.png") center center / cover no-repeat;
+}
+
+
+.gallery__project-name-wrapper {
+	position: absolute;
+	bottom: 60px;
+}
+
+.gallery__project-name {
+	font-size: 30px;
+	line-height: 41px;
+	color: #fff;
+	max-width: 443px;
+}
+
+.gallery__control-wrapper {
+	position: absolute;
+	bottom: 165px;
+	width: 100%;
+}
+
+.gallery__control {
+	display: flex;
+	width: 100%;
+	gap: 34px;
+
+}
+
+.gallery__control-prev {
+	/* width: 40px;
+	height: 40px; */
+}
+
+.gallery__control-prev:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+.gallery__control-next {
+	/* width: 40px;
+	height: 40px; */
+}
+
+.gallery__control-next:hover {
+	transition: 0.2s;
+	opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+	.gallery {
+		height: 536px;
+	}
+
+	.gallery__slide {
+		height: 536px;
+	}
+
+	.gallery-section__title-wrapper {
+		top: 80px;
+		left: 16px;
+	}
+
+	.section__title.gallery-section__title {
+		font-size: 20px;
+		line-height: 27px;
+	}
+
+
+	.gallery__project-name-wrapper {
+		position: absolute;
+		bottom: 80px;
+	}
+
+	.gallery__project-name {
+		font-size: 25px;
+		line-height: 34px;
+		max-width: 374px;
+	}
+
+	.gallery__control-wrapper {
+		bottom: 155px;
+		left: 0;
+		width: calc(100% - 50px - 15px);
+	}
+
+}
+
+/* 
+_ _Адаптив для кнопок 
+
+*/
+@media (max-width: 767px) {
+	.gallery {
+		height: 408px;
+	}
+
+
+	.gallery__slide {
+		height: 408px;
+		padding-left: 0px;
+	}
+
+
+	.gallery-section__title-wrapper {
+		top: 59px;
+		left: 12px;
+
+	}
+
+	.section__title.gallery-section__title {
+		font-size: 14px;
+		line-height: 19px;
+		/* z-index: 10; Нужно как-то исправить появление заголовка при появлении PopUp */
+	}
+
+	.gallery__project-name-wrapper {
+		position: absolute;
+		bottom: 61px;
+	}
+
+	.gallery__project-name {
+		font-size: 19px;
+		line-height: 26px;
+		max-width: 277px;
+	}
+
+	.gallery__control-wrapper {
+		width: calc(100%);
+		bottom: 194px;
+		left: 0px;
+	}
+
+	.gallery__control {
+		justify-content: space-between;
+	}
+
+	.gallery__control-prev {
+		width: 15px;
+		height: 25px;
+	}
+
+	.gallery__control-next {
+		width: 15px;
+		height: 25 px;
+	}
+
+
+}

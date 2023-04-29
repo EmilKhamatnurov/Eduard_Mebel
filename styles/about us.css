@@ -1,0 +1,68 @@
+.about {
+	margin-bottom: 150px;
+}
+
+.about__text {
+	max-width: 1060px;
+	font-size: 45px;
+	margin-left: 3px;
+	line-height: 61px;
+	letter-spacing: -0.03em;
+	font-weight: 100;
+	margin-bottom: 30px;
+}
+
+.about__button {
+	color: rgb(255, 255, 255);
+	padding: 18px 40px;
+	background: rgb(173, 24, 24);
+	font-size: 20px;
+	line-height: 27px;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 1px solid rgb(173, 24, 24);
+}
+
+.about__button:hover {
+	color: rgb(173, 24, 24);
+	transition: all 0.3s ease 0s;
+	background: rgb(255, 255, 255);
+	border: 1px solid rgb(173, 24, 24);
+}
+
+@media (max-width: 1199px) {
+	.about {
+		margin-bottom: 120px;
+	}
+
+	.about__text {
+		font-size: 35px;
+		line-height: 48px;
+		max-width: 690px;
+	}
+
+	.about__button {
+		font-size: 20px;
+		line-height: 27px;
+	}
+}
+
+@media (max-width: 767px) {
+	.about {
+		margin-bottom: 80px;
+	}
+
+	.about__text {
+		font-size: 22px;
+		line-height: 30px;
+		max-width: 100%;
+		margin-bottom: 30px;
+		margin-left: 1px;
+	}
+
+	.about__button {
+		font-size: 16px;
+		line-height: 22px;
+		padding: 13px 27px;
+	}
+}

@@ -1,0 +1,81 @@
+.primary-section {
+	margin-bottom: 150px;
+}
+
+.primary-section__title {
+	font-size: 60px;
+	max-width: 990px;
+	line-height: 60px;
+	margin-bottom: 30px;
+}
+
+.primary-section__info {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	max-width: 100%;
+	background: url("../resources/main_image.jpg") center center / cover no-repeat;
+}
+
+.primary-section__text {
+	color: rgb(255, 255, 255);
+	left: 40px;
+	bottom: 40px;
+	position: absolute;
+	max-width: 430px;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+@media (max-width: 1199px) {
+	.primary-section {
+		margin-bottom: 120px;
+	}
+
+	.primary-section__title {
+		font-size: 50px;
+		line-height: 60px;
+		max-width: 802px;
+	}
+
+	.primary-section__info {
+		height: 400px;
+		background: url("../resources/Main\ Image.png") center center / cover no-repeat;
+		/* Подозрительное свойство */
+		/* background-position: bottom -66px left; */
+	}
+
+	.primary-section__text {
+		font-size: 20px;
+		bottom: 30px;
+		line-height: 27px;
+	}
+}
+
+@media (max-width: 767px) {
+	.primary-section {
+		margin-bottom: 80px;
+	}
+
+	.primary-section__title {
+		font-size: 30px;
+		line-height: 32px;
+		margin-bottom: 25px;
+		width: 100%;
+		/* max-width: 334px; */
+	}
+
+	.primary-section__info {
+		height: 304px;
+		background: url("../resources/interior\ phone\ image.png") center center / cover no-repeat
+	}
+
+	.primary-section__text {
+		left: 15px;
+		bottom: 15px;
+		font-size: 16px;
+		max-width: 312px;
+		line-height: 22px;
+	}
+
+}
