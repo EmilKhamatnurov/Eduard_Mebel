@@ -7,9 +7,9 @@ html {
 }
 
 .header {
-	background: url("../resources/MainSliderImage\ 1.png") right center / cover no-repeat;
-	background-size: contain;
-
+	/* background: url("../resources/MainSliderImage\ 1.png") right center / cover no-repeat;
+	background-size: contain; */
+	position: relative;
 }
 
 .container {
@@ -82,4 +82,60 @@ html {
 	background-color: #303032;
 	padding: 18px 72px;
 	border-radius: 5px;
+}
+
+.header__slider {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 663px;
+	height: 829px;
+}
+
+/* ГЛАВНЫЙ СЛАЙДЕР */
+.slider-container {
+	position: absolute;
+	width: 663px;
+	height: 829px;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	transition: transform 1s ease;
+}
+
+.slide {
+	flex: 1;
+}
+
+.pagination {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+}
+
+.pagination-btn {
+	font-size: 16px;
+	color: #ffffff8e;
+	border: none;
+	background: transparent;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.pagination-btn.active {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
 }
