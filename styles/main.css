@@ -96,7 +96,8 @@ html {
 .slider-container {
 	position: absolute;
 	width: 663px;
-	height: 829px;
+	/* height: 829px; */
+	height: 100%;
 	right: 0;
 	top: 0;
 	overflow: hidden;
