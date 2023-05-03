@@ -19,7 +19,7 @@ html {
 
 .header-container {
 	padding-top: 90px;
-	padding-bottom: 177px;
+	padding-bottom: 98px;
 }
 
 .header__navigation {
@@ -140,3 +140,39 @@ html {
 	color: rgb(255, 255, 255);
 	font-size: 20px;
 }
+
+/* ГЛАВНАЯ СЕКЦИЯ */
+.main {}
+
+.news-section {
+	background-color: #303032;
+	padding-top: 66px;
+}
+
+.news-section__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 37px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+
+.news-section__image {
+	color: #FFFFFF;
+}
+
+.news-section__description {
+	color: #FFFFFF;
+}
+
+.header__logo {}
+
+.header__logo_white {
+	color: #FFFFFF;
+}
+
+.news-section__subtitle {
+	color: #FFFFFF;
+}
+
+.news-section__about-us-image {}
