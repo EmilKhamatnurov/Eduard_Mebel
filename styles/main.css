@@ -86,60 +86,14 @@ html {
 
 .header__slider {
 	position: absolute;
-	right: 0;
+	left: 55%;
 	top: 0;
-	width: 663px;
+
+	/* width: 663px; */
 	height: 829px;
 }
 
-/* ГЛАВНЫЙ СЛАЙДЕР */
-.slider-container {
-	position: absolute;
-	width: 663px;
-	/* height: 829px; */
-	height: 100%;
-	right: 0;
-	top: 0;
-	overflow: hidden;
-}
 
-.slider {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	transition: transform 1s ease;
-}
-
-.slide {
-	flex: 1;
-}
-
-.pagination {
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-}
-
-.pagination-btn {
-	font-size: 16px;
-	color: #ffffff8e;
-	border: none;
-	background: transparent;
-	margin: 0 10px;
-	cursor: pointer;
-}
-
-.pagination-btn.active {
-	color: rgb(255, 255, 255);
-	font-size: 20px;
-}
 
 /* ГЛАВНАЯ СЕКЦИЯ */
 .main {}
