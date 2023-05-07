@@ -7,24 +7,27 @@ html {
 }
 
 .header {
-	/* background: url("../resources/MainSliderImage\ 1.png") right center / cover no-repeat;
-	background-size: contain; */
 	position: relative;
 }
 
+/* ГЛАВНЫЙ СЛАЙДЕР */
+
+
+/*_____СЛАЙДЕР_____  */
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
 .header-container {
+	position: relative;
 	padding-top: 90px;
 	padding-bottom: 98px;
 }
 
 .header__navigation {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	gap: 100px;
 	margin-bottom: 100px;
@@ -92,41 +95,3 @@ html {
 	/* width: 663px; */
 	height: 829px;
 }
-
-
-
-/* ГЛАВНАЯ СЕКЦИЯ */
-.main {}
-
-.news-section {
-	background-color: #303032;
-	padding-top: 66px;
-}
-
-.news-section__title {
-	font-weight: 700;
-	font-size: 28px;
-	line-height: 37px;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
-}
-
-.news-section__image {
-	color: #FFFFFF;
-}
-
-.news-section__description {
-	color: #FFFFFF;
-}
-
-.header__logo {}
-
-.header__logo_white {
-	color: #FFFFFF;
-}
-
-.news-section__subtitle {
-	color: #FFFFFF;
-}
-
-.news-section__about-us-image {}
