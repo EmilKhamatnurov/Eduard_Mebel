@@ -11,7 +11,9 @@ for (let i = 0; i < slideCount; i++) {
   button.addEventListener('click', () => {
     goToSlide(i);
   });
-  pagination.appendChild(button);
+  let but = document.createElement('button');
+  but.innerHTML = i + 1;
+  pagination.appendChild(but);
 }
 
 // Переход к нужному слайду
