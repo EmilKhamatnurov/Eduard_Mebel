@@ -8,6 +8,7 @@ html {
 
 .header {
 	position: relative;
+	margin-bottom: 100px;
 }
 
 /* ГЛАВНЫЙ СЛАЙДЕР */
@@ -115,6 +116,9 @@ html {
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
 }
+.header__logo_black {
+	color: rgb(0, 0, 0);
+}
 
 .navigation {
 	display: flex;
@@ -181,4 +185,37 @@ html {
 
 	/* width: 663px; */
 	height: 829px;
+}
+
+/* MAIN SECTION */
+.about-section {
+}
+
+.about-section__title {
+	font-weight: 700;
+font-size: 28px;
+line-height: 37px;
+margin-bottom: 105px;
+}
+.about-section__info {
+
+}
+
+/* GRID */
+.grid {
+	display: grid;
+	row-gap: 30px;
+	
+
+	grid-template-areas:
+		"A A A A   A A A A   B B B B   B B B B"
+		"A A A A   A A A A   B B B B   B B B B"
+
+		"C C C C   D D D D   E E E E   F F F F"
+
+		"G G G G   H H H H   I I I I   I I I I"
+
+		"L L L L   L L L L   M M M M   M M M M"
+		"L L L L   L L L L   M M M M   M M M M"
+    ;
 }
