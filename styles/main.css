@@ -313,10 +313,83 @@ line-height: 27px;
 .grid__about-image {
 	grid-area: M;
 }
-/* GRID */
+/*____ GRID ____ */
+
+/* SHOP */
+.shop-section {
+}
+
+.shop-section__title {
+}
+/* Products Row */
+.shop__row {
+}
+.item {
+width: 209px;
+height: 356px;
+}
+.item_one {
+background: url(../resources/Item\ 1.png) 0 0 / cover no-repeat;
+}
+.item__name {
+}
+.item__price {
+}
+.item__button {
+}
+/* Shop section slider */
+.shop-section__slider {
+	width: 100%;
+	height: 842px;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .shop-section__slides-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .shop__slide {
+	width: 100%;
+	height: 100%;
+  }
+  
+  .shop-slider__pagination {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+  }
+  
+  .shop-slider__pagination button {
+	/* margin: 0 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: none;
+	background-color: #ccc;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out; */
+  }
+  
+  .shop-slider__pagination button.active {
+	background-color: #ffb7b7;
+  }
+  
+/*____ SHOP _____ */
+
+
+
 
 /* GALERY */
-.gallery-section {}
+.gallery-section {
+	margin-bottom: 100px;
+}
 
 /* Галерея */
 .gallery {
@@ -413,4 +486,61 @@ line-height: 27px;
 .gallery__control-next:hover {
 	transition: 0.2s;
 	opacity: 0.5;
+}
+
+/* FOOTER */
+.footer {
+	padding-bottom: 50px;
+}
+
+.footer__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.footer__logo {
+	color: #000000;
+	font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+max-width: 193px;
+}
+.footer__links {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+}
+.footer__link {
+	color: #000000;
+	font-family: 'Avenir Next';
+	border-bottom: 1px solid #FFFFFF;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+}
+.footer__link:hover {
+	border-bottom: 1px solid #000000;
+}
+.footer__contacts {
+	display: flex;
+	gap: 73px;
+}
+.footer__contact {
+	font-weight: 400;
+	border-bottom: 1px solid #FFFFFF;
+	font-size: 16px;
+	color: #000000;
+	font-family: 'Avenir Next';
+}
+.footer__contact:hover {
+	border-bottom: 1px solid #000000;
+}
+
+.footer__mail {
+	
+}
+.footer__number {
+	
 }

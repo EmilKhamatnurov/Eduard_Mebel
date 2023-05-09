@@ -36,9 +36,9 @@
                     <div class="header__navigation">
                         <a href="#" class="header__logo">KHAMATNUROV MEBEL</a>
                         <nav class="navigation">
-                            <a href="#" class="navigation__link">Мебель</a>
-                            <a href="#" class="navigation__link">ПРОЕКТЫ</a>
-                            <a href="#" class="navigation__link">контакты</a>
+                            <a href="#about-section" class="navigation__link">О нас</a>
+                            <a href="#shop-section" class="navigation__link">Каталог</a>
+                            <a href="#gallery-section" class="navigation__link">Проекты</a>
                         </nav>
                     </div>
                     <div class="header__info">
@@ -57,9 +57,10 @@
         </div>
     </header>
 	<main class="main">
+        <!-- Секция "О нас" -->
         <section class="about-section">
             <div class="container">
-                <h2 class="about-section__title">О НАС</h2>
+                <h2 class="about-section__title" id="about-section">О НАС</h2>
                 <div class="about-section__info">
                 <div class="grid">
                     <div class="grid__product-image-field">
@@ -89,7 +90,7 @@
                         </p>
                     </div>
                     <img class="grid__image_1" src="resources/about-section-image-2.png" alt="Фотография изделия">
-                    <a href="#" class="header__logo header__logo_black">KHAMATNUROV MEBEL</a>
+                    <a class="header__logo header__logo_black">KHAMATNUROV MEBEL</a>
                     <img class="grid__image_2" src="resources/тумба 3 05 1.png" alt="Фотография изделия">
                     <img class="grid__image_3" src="resources/about-section-image-3.png" alt="Фотография изделия">
 
@@ -129,12 +130,43 @@
             </div>
             
         </section>
-        
+        <!-- Секция магазина товаров из дерева -->
+        <section class="shop-section">
+            <div class="container">
+                <h2 class="shop-section__title" id="shop-section"></h2>
+            </div>
+            <div class="shop-section__slider">
+                <div class="shop-section__slides-container">
+                  <div class="shop__slide">
+                    <div class="shop__row">
+                        <div class="item item_one">
+                            <div class="item__name">Тумба «1»</div>
+                            <div class="item__price">₽1700</div>
+                            <div class="item__button">Купить</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="shop__slide">
+                    <!-- Содержимое второго слайда -->
+                  </div>
+                  <div class="shop__slide">
+                    <!-- Содержимое третьего слайда -->
+                  </div>
+                  <!-- Добавьте сколько угодно слайдов -->
+                </div>
+                <div class="shop-slider__pagination">
+                    <button class="shop-slider__button">Тумбы</button>
+                    <button class="shop-slider__button">Тумбы</button>
+                    <button class="shop-slider__button">Тумбы</button>
+                </div>
+              </div>
+        </section>
+        <!-- Секция Галереи -->
         <section class="gallery-section">
             <div class="gallery">
                 <div class="container">
                     <div class="gallery-section__title-wrapper">
-                        <h2 class="gallery-section__title" id="gallery">ПРОЕКТЫ</h2>
+                        <h2 class="gallery-section__title" id="gallery-section">ПРОЕКТЫ</h2>
                     </div>
                 </div>
                 <div class="gallery__slides">
@@ -155,7 +187,7 @@
                     <div class="gallery__slide gallery__slide_third">
                         <div class="container">
                             <div class="gallery__project-name-wrapper">
-                                <p class="gallery__project-name">Визуализация кухни-гостиной в частном доме</p>
+                                <p class="gallery__project-name">ПРОЕКТ ДЕТСКОЙ КОМНАТЫ</p>
                             </div>
                         </div>
                     </div>
@@ -175,8 +207,24 @@
                 </div>
             </div>
         </section>
-
 	</main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <a href="#" class="header__logo footer__logo">KHAMATNUROV MEBEL</a>
+                <nav class="footer__links">
+                    <a class="footer__link" href="#">ДОСТАВКА</a>
+                    <a class="footer__link" href="#">ОПЛАТА</a>
+                    <a class="footer__link" href="#">КОНТАКТЫ</a>
+                    <a class="footer__link" href="#">ГАРАНТИИ</a>
+                </nav> 
+            </div>
+            <div class="footer__contacts">
+                <a class="footer__contact footer__mail" href="mailto:khamatnurov.mebel@gmail.com">khamatnurov.mebel@gmail.com</a>
+                <a class="footer__contact footer__number" href="tel:+79196161829 ">+7(919) 61-61-829 </a>
+            </div>
+        </div>
+    </footer>
 	<script src="scripts/main_slider.js"></script>
     <script src="scripts/gallery.js"></script>
 </body>
