@@ -296,6 +296,7 @@ font-weight: 400;
 font-size: 20px;
 line-height: 27px;
 }
+
 .grid__about-text-wrapper {
 	grid-area: L;
 	align-content: center;
@@ -311,4 +312,105 @@ line-height: 27px;
 }
 .grid__about-image {
 	grid-area: M;
+}
+/* GRID */
+
+/* GALERY */
+.gallery-section {}
+
+/* Галерея */
+.gallery {
+	position: relative;
+	width: 100%;
+	height: 717px;
+}
+
+.gallery-section__title-wrapper {
+	position: absolute;
+	top: 60px;
+	z-index: 100;
+}
+
+.gallery-section__title {
+	color: #fff;
+	font-weight: 700;
+	font-size: 28px;
+	ine-height: 37px;
+	letter-spacing: 0.05em;
+}
+
+/* Слайды */
+.gallery__slides {
+	position: relative;
+}
+
+.gallery__slide {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 717px;
+}
+
+.gallery__slide_active {
+	opacity: 1;
+}
+
+/* Изображения слайдов */
+.gallery__slide_first {
+	background: url("../resources/gallery_image_1.png") center center / cover no-repeat;
+}
+
+.gallery__slide_second {
+	background: url("../resources/gallery_image_2.png") center center / cover no-repeat;
+}
+
+.gallery__slide_third {
+	background: url("../resources/gallery_image_1.png") center center / cover no-repeat;
+}
+
+.gallery__project-name-wrapper {
+	position: absolute;
+	bottom: 60px;
+}
+
+.gallery__project-name {
+	font-size: 30px;
+	line-height: 41px;
+	color: #fff;
+	max-width: 490px;
+}
+
+.gallery__control-wrapper {
+	position: absolute;
+	bottom: 165px;
+	width: 100%;
+}
+
+.gallery__control {
+	display: flex;
+	width: 100%;
+	gap: 34px;
+
+}
+
+.gallery__control-prev {
+	/* width: 40px;
+	height: 40px; */
+}
+
+.gallery__control-prev:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+.gallery__control-next {
+	/* width: 40px;
+	height: 40px; */
+}
+
+.gallery__control-next:hover {
+	transition: 0.2s;
+	opacity: 0.5;
 }
