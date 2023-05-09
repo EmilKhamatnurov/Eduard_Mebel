@@ -171,18 +171,22 @@ html {
 }
 
 .header__button {
-	color: rgb(0, 0, 0);;
+	color: rgb(0, 0, 0);
 	background-color: #ffffff;
+	border: 1px solid #ffffff;
 	padding: 18px 72px;
 	border-radius: 5px;
 	font-weight: 700;
+}
+.header__button:hover{
+	color: rgba(0, 0, 0, 0.591);
+	background-color: #ffffff70;
 }
 
 .header__slider {
 	position: absolute;
 	left: 55%;
 	top: 0;
-
 	/* width: 663px; */
 	height: 829px;
 }
@@ -204,18 +208,107 @@ margin-bottom: 105px;
 /* GRID */
 .grid {
 	display: grid;
+
 	row-gap: 30px;
-	
-
 	grid-template-areas:
-		"A A A A   A A A A   B B B B   B B B B"
-		"A A A A   A A A A   B B B B   B B B B"
-
-		"C C C C   D D D D   E E E E   F F F F"
-
-		"G G G G   H H H H   I I I I   I I I I"
-
-		"L L L L   L L L L   M M M M   M M M M"
-		"L L L L   L L L L   M M M M   M M M M"
+		"A  A  B  B"
+		"C  D  E  F"
+		"G  H  I  I"
+		"L  L  M  M"
     ;
+	column-gap: 35px;
+	row-gap: 35px;
+	grid-template-rows: 614px 289px 289px 614px;
+	grid-template-columns: repeat(4, calc(25% - 35px));
+}
+.grid img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid__product-image-field {
+	grid-area: A;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 32px 53px;
+	background-color: #303032;
+	color: #ffffff;
+}
+.grid__product-image {
+	margin-bottom: 15px;
+}
+.grid__product-name {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+}
+.grid__product-price {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 38px;
+}
+.grid__product-description__wrapper {
+	grid-area: B;
+	align-content: center;
+	justify-content: stretch;
+}
+.grid__product-description {
+	
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+}
+
+
+.grid__image_1 {
+	grid-area: C;
+}
+.header__logo_black {
+	grid-area: D;
+	color: #000000;
+	margin: auto auto;
+}
+.grid__image_2 {
+	grid-area: G;
+}
+.grid__image_3 {
+	grid-area: H;
+}
+
+.grid__image_4 {
+	grid-area: E;
+}
+.grid__image_5 {
+	grid-area: F;
+}
+.grid__image-description {
+	grid-area: I;
+	font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+}
+.grid__about-text-wrapper {
+	grid-area: L;
+	align-content: center;
+	justify-content: stretch;
+}
+.grid__about-text {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+}
+.grid__about-image {
+	grid-area: M;
 }
